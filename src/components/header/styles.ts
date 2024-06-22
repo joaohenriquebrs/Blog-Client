@@ -56,6 +56,7 @@ export const InputSearchBar = styled.input`
   padding: 0px 20px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  color: #FFF;
 `;
 
 export const ButtonSearchbar = styled.button`
@@ -65,6 +66,7 @@ export const ButtonSearchbar = styled.button`
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  cursor: pointer;
 
   svg {
     font-size: 18px; 
@@ -91,7 +93,7 @@ export const MainTitle = styled.div`
   line-height: 54px;
   text-align: left;
   color: #9E6DC2;
-  width: 450px;
+  max-width: 850px;
 `;
 
 export const SubTitle = styled.div`
@@ -101,7 +103,7 @@ export const SubTitle = styled.div`
   line-height: 27px;
   text-align: left;
   color: #FBF6FF;
-  width: 410px;
+  max-width: 510px;
 `;
 
 export const SeeMoreButton = styled.a`
