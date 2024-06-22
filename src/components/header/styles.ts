@@ -67,11 +67,11 @@ export const MenuContainer = styled.div<{ isOpen?: boolean }>`
     position: absolute;
     top: 100px;
     right: 85px;
-    background: #290742;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     z-index: 10;
+    background: rgba(158, 109, 194, 0.85);
   }
 
   @media (min-width: 800px) and (max-width: 1000px) {
@@ -87,11 +87,13 @@ export const MenuContainer = styled.div<{ isOpen?: boolean }>`
   @media (min-width: 400px) and (max-width: 600px) {
     right: 45px;
     top: 70px;
+    gap: 15px;
   }
 
   @media (max-width: 400px) {
     right: 22px;
     top: 60px;
+    gap: 15px;
   }
 `;
 
