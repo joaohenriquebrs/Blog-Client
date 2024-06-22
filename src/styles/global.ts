@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+      font-family: 'Poppins';
+      src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* font-family: Poppins, sans-serif; */
   }
 `;
 export default GlobalStyle;
