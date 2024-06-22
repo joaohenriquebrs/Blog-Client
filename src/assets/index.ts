@@ -6,10 +6,10 @@ import ThirdImageMain from './thirdImageMain.png';
 import FourthImageMain from './fourthImageMain.png';
 
 export {
-    Logo,
-    HeaderImage,
-    FirstImageMain,
-    SecondImageMain,
-    ThirdImageMain,
-    FourthImageMain
+  Logo,
+  HeaderImage,
+  FirstImageMain,
+  SecondImageMain,
+  ThirdImageMain,
+  FourthImageMain
 };

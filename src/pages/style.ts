@@ -228,7 +228,7 @@ export const RightTopContent = styled.div`
   @media (max-width: 600px) {
     flex-direction: row;
     width: 100%;
-    border-top: 1px solid #F2E7FA;
+    border-top: 1px solid #f2e7fa;
     padding-top: 20px;
     gap: 30px;
   }
@@ -352,7 +352,7 @@ export const ButtonUpPage = styled.button`
   position: fixed;
   bottom: 20px;
   right: 40px;
-  background-color: #9E6DC2;
+  background-color: #9e6dc2;
   border: none;
   border-radius: 50%;
   width: 50px;
@@ -362,10 +362,12 @@ export const ButtonUpPage = styled.button`
   align-items: center;
   cursor: pointer;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 
   &:hover {
-    background-color: #4FFF4B;
+    background-color: #4fff4b;
     transform: scale(1.1);
   }
 

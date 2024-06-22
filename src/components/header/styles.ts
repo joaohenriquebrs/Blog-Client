@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
   background: #290742;
   height: 588px;
   padding: 70px 120px;
-  border-bottom: 6px solid #4FFF4B;
+  border-bottom: 6px solid #4fff4b;
 
   @media (min-width: 1000px) and (max-width: 1200px) {
     padding: 60px 90px;
@@ -47,8 +47,7 @@ export const FirstHeaderContainer = styled.div`
   }
 `;
 
-export const LogoContainer = styled.div`
-`;
+export const LogoContainer = styled.div``;
 
 export const MenuContainer = styled.div<{ isOpen?: boolean }>`
   display: flex;
@@ -61,7 +60,7 @@ export const MenuContainer = styled.div<{ isOpen?: boolean }>`
   }
 
   @media (max-width: 1200px) {
-    display: ${props => (props.isOpen ? 'flex' : 'none')};
+    display: ${(props) => (props.isOpen ? 'flex' : 'none')};
     flex-direction: column;
     gap: 20px;
     position: absolute;
@@ -99,28 +98,28 @@ export const MenuContainer = styled.div<{ isOpen?: boolean }>`
 
 export const MenuItem = styled.a`
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
   display: flex;
   flex-direction: row;
   text-decoration: none;
   transition: transform 0.3s ease;
 
-  &:hover{
+  &:hover {
     transform: scale(1.07);
   }
 `;
 
 export const MenuItemBorder = styled.a`
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
   display: flex;
   flex-direction: row;
-  border-left: 2px solid #4FFF4B;
+  border-left: 2px solid #4fff4b;
   padding-left: 3px;
   text-decoration: none;
   transition: transform 0.3s ease;
 
-  &:hover{
+  &:hover {
     transform: scale(1.07);
   }
 `;
@@ -146,7 +145,7 @@ export const InputSearchBar = styled.input`
   padding: 0px 20px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  color: #FFF;
+  color: #fff;
 
   @media (min-width: 1000px) and (max-width: 1200px) {
     width: 380px;
@@ -165,7 +164,7 @@ export const InputSearchBar = styled.input`
 `;
 
 export const ButtonSearchbar = styled.button`
-  background: #9E6DC2;
+  background: #9e6dc2;
   width: 70px;
   height: 44px;
   border: none;
@@ -174,7 +173,7 @@ export const ButtonSearchbar = styled.button`
   cursor: pointer;
 
   svg {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   @media (min-width: 1000px) and (max-width: 1200px) {
@@ -205,7 +204,7 @@ export const LeftContent = styled.div`
   flex-direction: column;
   gap: 15px;
 
-  @media  (max-width: 600px) {
+  @media (max-width: 600px) {
     align-items: center;
   }
 `;
@@ -216,7 +215,7 @@ export const MainTitle = styled.div`
   font-weight: 700;
   line-height: 54px;
   text-align: left;
-  color: #9E6DC2;
+  color: #9e6dc2;
   max-width: 850px;
 
   @media (min-width: 1200px) and (max-width: 1400px) {
@@ -257,7 +256,7 @@ export const SubTitle = styled.div`
   font-weight: 400;
   line-height: 27px;
   text-align: left;
-  color: #FBF6FF;
+  color: #fbf6ff;
   max-width: 510px;
 
   @media (min-width: 1000px) and (max-width: 1400px) {
@@ -297,12 +296,12 @@ export const SeeMoreButton = styled.a`
   font-weight: 700;
   line-height: 27px;
   text-align: left;
-  color: #9E6DC2;
+  color: #9e6dc2;
   text-decoration: none;
   transition: transform 0.3s ease;
   width: 100px;
 
-  &:hover{
+  &:hover {
     transform: scale(1.07);
   }
 `;
@@ -318,7 +317,7 @@ export const RightContent = styled.div`
 export const MenuIcon = styled.div`
   display: none;
   cursor: pointer;
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
 
   @media (max-width: 1200px) {
