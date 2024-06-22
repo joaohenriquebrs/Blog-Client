@@ -1,4 +1,4 @@
-# Projeto de um Blog para a Atom Studio
+# Blog Project - Atom Studio 
 
 ## Tools
 - React
