@@ -1,22 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import {
     HeaderContainer, FirstHeaderContainer, LogoContainer,
-    MenuContainer, MenuItem, Strong, BorderName, SearchBarContainer,
+    MenuContainer, MenuItem, MenuItemBorder, Strong, SearchBarContainer,
     InputSearchBar, ButtonSearchbar, SecondHeaderContainer, LeftContent,
-    MainTitle, SubTitle, SeeMoreButton, RightContent
+    MainTitle, SubTitle, SeeMoreButton, RightContent, MenuIcon
 } from './styles';
 import { Logo, HeaderImage } from 'assets';
-import { FaSearch, FaArrowRight } from 'react-icons/fa';
+import { FaSearch, FaArrowRight, FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     return (
         <HeaderContainer>
             <FirstHeaderContainer>
                 <LogoContainer><Image src={Logo} alt='Logo da empresa Blog' /></LogoContainer>
-                <MenuContainer>
-                    <MenuItem><BorderName></BorderName><Strong>Home</Strong></MenuItem>
+                <MenuContainer isOpen={isMenuOpen}>
+                    <MenuItemBorder><Strong>Home</Strong></MenuItemBorder>
                     <MenuItem>Sobre</MenuItem>
                     <MenuItem>Categorias</MenuItem>
                     <MenuItem>Contato</MenuItem>
@@ -25,6 +30,9 @@ export default function Header() {
                     <InputSearchBar placeholder="Buscar" />
                     <ButtonSearchbar><FaSearch color="#FFF" /></ButtonSearchbar>
                 </SearchBarContainer>
+                <MenuIcon onClick={toggleMenu}>
+                    {isMenuOpen ? <FaTimes color="#FFF" size={20} /> : <FaBars color="#FFF" size={20} />}
+                </MenuIcon>
             </FirstHeaderContainer>
             <SecondHeaderContainer>
                 <LeftContent>
@@ -37,7 +45,7 @@ export default function Header() {
                     </SubTitle>
                     <SeeMoreButton href='#'>Veja mais<FaArrowRight color='#4FFF4B' /></SeeMoreButton>
                 </LeftContent>
-                <RightContent><Image src={HeaderImage} alt='Imagem de códigos' /></RightContent>
+                <RightContent><Image src={HeaderImage} alt='Imagem de códigos' layout='responsive' /></RightContent>
             </SecondHeaderContainer>
         </HeaderContainer>
     )
