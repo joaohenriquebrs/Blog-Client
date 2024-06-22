@@ -1,4 +1,4 @@
-import Logo from './logo.png';
+import Logo from './Logo.png';
 import HeaderImage from './headerImage.png';
 import FirstImageMain from './firstImageMain.png';
 import SecondImageMain from './secondImageMain.png';
