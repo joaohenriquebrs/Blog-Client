@@ -9,6 +9,11 @@ export const MainContainer = styled.div`
   overflow-x: hidden;
 `;
 
+export const Reference = styled.div`
+  width: 0;
+  height: 0;
+`;
+
 export const ContentContainer = styled.div`
   width: 100vw;
   height: 100%;
@@ -341,4 +346,30 @@ export const SubTextBottom = styled.div`
     line-height: 14px;
     margin-bottom: 20px;
   }
-`; 
+`;
+
+export const ButtonUpPage = styled.button`
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  background-color: #9E6DC2;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: #4FFF4B;
+    transform: scale(1.1);
+  }
+
+  svg {
+    font-size: 20px;
+  }
+`;

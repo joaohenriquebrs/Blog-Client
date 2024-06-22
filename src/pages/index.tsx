@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import Header from 'components/header';
 import {
   MainContainer, ContentContainer, TopContentContainer,
@@ -5,14 +6,27 @@ import {
   RightTopContent, FirstRightContainer, DateText,
   SecondRightContainer, BottomContent, MainTextRight,
   SubTextRight, BlockBottom, BottomImage, MainTextBottom,
-  SubTextBottom
+  SubTextBottom, ButtonUpPage, Reference
 } from './style';
 import Image from 'next/image';
 import { FirstImageMain, FourthImageMain, SecondImageMain, ThirdImageMain } from 'assets';
+import { FaArrowUp } from 'react-icons/fa';
 
 export default function Home() {
+  const mainContentRef = useRef<HTMLDivElement>(null);
+
+  const scrollToTop = () => {
+    if (mainContentRef.current) {
+      mainContentRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <MainContainer>
+      <Reference ref={mainContentRef}></Reference>
       <Header />
       <ContentContainer>
         <TopContentContainer>
@@ -78,6 +92,7 @@ export default function Home() {
             </SubTextBottom>
           </BlockBottom>
         </BottomContent>
+        <ButtonUpPage onClick={scrollToTop}><FaArrowUp color="#FFF" /></ButtonUpPage>
       </ContentContainer>
     </MainContainer>
   );
