@@ -21,10 +21,10 @@ export default function Header() {
             <FirstHeaderContainer>
                 <LogoContainer><Image src={Logo} alt='Logo da empresa Blog' /></LogoContainer>
                 <MenuContainer isOpen={isMenuOpen}>
-                    <MenuItemBorder><Strong>Home</Strong></MenuItemBorder>
-                    <MenuItem>Sobre</MenuItem>
-                    <MenuItem>Categorias</MenuItem>
-                    <MenuItem>Contato</MenuItem>
+                    <MenuItemBorder href='#'><Strong>Home</Strong></MenuItemBorder>
+                    <MenuItem href='#'>Sobre</MenuItem>
+                    <MenuItem href='#'>Categorias</MenuItem>
+                    <MenuItem href='#'>Contato</MenuItem>
                 </MenuContainer>
                 <SearchBarContainer>
                     <InputSearchBar placeholder="Buscar" />

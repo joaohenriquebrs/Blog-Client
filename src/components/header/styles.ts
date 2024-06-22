@@ -97,20 +97,32 @@ export const MenuContainer = styled.div<{ isOpen?: boolean }>`
   }
 `;
 
-export const MenuItem = styled.div`
+export const MenuItem = styled.a`
   font-size: 18px;
   color: #FFF;
   display: flex;
   flex-direction: row;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+
+  &:hover{
+    transform: scale(1.07);
+  }
 `;
 
-export const MenuItemBorder = styled.div`
+export const MenuItemBorder = styled.a`
   font-size: 18px;
   color: #FFF;
   display: flex;
   flex-direction: row;
   border-left: 2px solid #4FFF4B;
   padding-left: 3px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+
+  &:hover{
+    transform: scale(1.07);
+  }
 `;
 
 export const Strong = styled.div`
