@@ -1,7 +1,7 @@
 # Blog Project - Atom Studio
 
 ## Site:
-<a href="https://blog-client-gray.vercel.app" target="_blank" rel="noopener noreferrer">Link</a>
+https://blog-client-gray.vercel.app
 
 ## Tools
 
